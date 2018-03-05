@@ -1,1 +1,1 @@
-# yoga-landing
+# yoga-landing project
