@@ -1,0 +1,151 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	// .program
+	// 	min-height: 1025px
+	// 	text-align: center
+	// 	.program_wrapper
+	// 		padding: 100px 0
+	// 		.uppercase_heading
+	// 			margin: 10px 0
+	// 			color: #5b6ceb
+	// 			font-size: 30px
+	// 		.italic_heading
+	// 			margin: 10px 0
+	// 			color: #777
+	// 			font-size: 41px
+	// 		.program_feature_wrapper
+	// 			justify-content: center
+	// 			margin: 0 -15px
+	// 			padding: 50px 0 0
+	// 			flex-wrap: wrap
+	// 			.program_feature_item
+	// 				flex-direction: column
+	// 				overflow: hidden
+	// 				margin: 0 15px 25px
+	// 				flex-basis: 570px
+	// 				min-height: 300px
+	// 				max-width: 300px
+	// 				border-radius: 8px
+	// 				box-shadow: 3.5px 3.5px 20px rgba(0, 0, 0, 0.1)
+	// 				.feature_item_img
+	// 					min-height: 300px
+	// 					min-width: 270px
+	// 					background-size: cover
+	// 					background-position: center
+	// 				.feature_item_content
+	// 					min-height: 300px
+	// 					min-width: 300px
+	// 					font-size: 14px
+	// 					// flex-grow: 1
+	// 					background-color: #fff
+	// 					text-align: left
+	// 					padding: 30px
+	// 					align-content: center
+	// 					.uppercase_heading
+	// 						white-space: nowrap
+	// 						color: #777
+	// 						font-size: 20px
+	// 						line-height: 2.25
+	// 					.submark
+	// 						color: #999
+
+	.gallery
+		.gallery-item
+			max-width: calc(100% / 3)
+
+	.elements
+		.elements_wrapper
+			.elements_item_wrapper
+				margin: 0 0
+				padding: 100px 0
+				justify-content: space-around
+				flex-wrap: wrap
+				min-height: 800px
+				align-content: center
+				.elements_item
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.gallery
+		.gallery-item
+			max-width: 50%
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header_menu
+		.nav
+		.nav_left
+			order: 2
+			justify-content: flex-end
+			// flex-grow: 1
+		.nav_logo
+			order: 1
+			justify-content: center
+			width: 100%
+			// flex-grow: 2
+			img
+				margin: 15px 0
+				width: 68px
+		.nav_right
+			order: 3
+			justify-content: flex-start
+			// flex-grow: 1
+
+.reservation
+	background-position: 65% center
+
+@media only screen and (max-width : 570px)
+	.header_menu
+		.nav
+			flex-wrap: wrap
+			width: 100%
+		.nav_left
+			flex-wrap: wrap
+		.nav_right
+			flex-wrap: wrap
+		.nav_item
+			justify-content: center
+			width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	// .gallery
+	// 	.gallery_item
+	// 		max-width: 100%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

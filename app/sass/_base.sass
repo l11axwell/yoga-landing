@@ -1,0 +1,108 @@
+/*==========  Base Styles  ==========*/
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+html, body
+	height: 100%
+
+body
+	margin: 0
+	padding: 0
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: 'OpenSansRegular', sans-serif
+	color: #555
+	overflow-x: hidden
+	opacity: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+body input:required:invalid
+	// box-shadow: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.hidden
+	display: none
+
+// Fontello styles
+[class*=" icon-"]::before,
+[class^="icon-"]::before
+	display: inline
+
+/**/
+
+// Owl-carousel styles
+
+.about
+	.owl-carousel
+		.owl-nav
+			.owl-prev,
+			.owl-next
+				z-index: 1000
+				position: absolute
+				top: calc(50% - 25px)
+				width: 50px
+				height: 50px
+				background-color: #fff
+				border-radius: 50%
+				box-shadow: 6.4px 6.4px 9px rgba(0, 0, 0, 0.1)
+				text-align: center
+				transition: ease .3s
+				outline: none
+				&:hover
+					background-color: darken(#ffffff, 3%)
+					&::before
+						color: darken(#5b6ceb, 3%)
+				&:active
+					background-color: darken(#ffffff, 5%)
+					&::before
+						color: darken(#5b6ceb, 5%)
+				&::before
+					font-family: 'yoga-icons'
+					color: #5b6ceb
+					font-size: 22px
+					line-height: 50px
+			.owl-prev
+				left: -25px
+				&::before
+					content: '\f007'
+			.owl-next
+				right: -25px
+				&::before
+					content: '\f006'
+
+/**/
+
+// Magnific-popup styles
+
+.mfp-bottom-bar
+	display: none
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close
+	cursor: default
+
+/**/
+
+.wrapper
+	max-width: 1170px
+	margin: auto
+
+.flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
