@@ -241,8 +241,10 @@
 	flex-wrap: wrap
 	align-content: flex-start
 	justify-content: center
+	margin: 0 auto
 	.gallery_item
-		max-width: 25%
+		display: block
+		width: 25%
 		position: relative
 		z-index: 1
 		outline: none
@@ -282,12 +284,6 @@
 				opacity: 1
 			&::after
 				opacity: .8
-		.gallery_img
-			background-size: contain
-			background-position: center
-			background-repeat: no-repeat
-			width: 100%
-			min-height: 350px
 
 // SECTION ABOUT
 
@@ -411,6 +407,7 @@
 					font-size: 18px
 					line-height: 65px
 					text-transform: uppercase
+					white-space: nowrap
 				.option.hr
 					&::after
 						content: ''
