@@ -442,42 +442,44 @@
 	width: 100%
 	min-height: 250px
 	margin: 50px auto 100px
-	background-color: #fff
-	border-radius: 8px
-	box-shadow: 6.4px 6.4px 50px rgba(0, 0, 0, 0.1)
 	.reviews_wrapper
+		margin: auto
+		flex-wrap: wrap
 		padding: 50px 0
+		background-color: #fff
+		border-radius: 8px
+		box-shadow: 6.4px 6.4px 50px rgba(0, 0, 0, 0.1)
 		.reviews_img_wrapper
-			min-width: 270px
-			min-height: 150px
-			.reviews_img
-				position: relative
-				z-index: 10
-				display: block
+			display: inline-flex
+			width: 270px
+			margin: auto
+			.reviews_img_bg
 				margin: auto
-				width: 125px
-				height: 125px
+				padding: 10px
+				background-color: #fff
+				border: 2px solid #d7d7d7
 				border-radius: 50%
-				background-size: 130% 130%
-				background-repeat: no-repeat
-				background-position: top center
-				&::before
-					content: ''
-					position: absolute
-					z-index: 1
-					top: -12px
-					left: -12px
-					width: calc(100% + 24px)
-					height: calc(100% + 24px)
-					padding: 10px
-					background-color: transparent
-					border: 2px solid #d7d7d7
+				max-height: 148px
+				max-width: 148px
+				.reviews_img
+					display: block
+					margin: auto
+					width: 124px
+					height: 124px
 					border-radius: 50%
+					background-size: 130% 130%
+					background-repeat: no-repeat
+					background-position: top center
 		.reviews_content_wrapper
-			max-width: 670px
+			display: inline-flex
+			flex-direction: column
+			justify-content: space-between
+			width: 900px
+			padding: 0 30px
 			.reviews_text
 				font-family: 'OpenSansItalic', sans-serif
 				line-height: 22px
+				max-width: 670px
 
 // CONTACTS STYLES
 
